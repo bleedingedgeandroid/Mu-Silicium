@@ -1,8 +1,0 @@
-[Defines]
-  DEC_SPECIFICATION                   = 0x00010005
-  PACKAGE_NAME                        = peridot
-  PACKAGE_GUID                        = f40612fc-1778-4a06-8b16-8d38b7a16800
-  PACKAGE_VERSION                     = 0.1
-
-[Guids]
-  gperidotTokenSpaceGuid    = { 0xf40612fc, 0x1778, 0x4a06, { 0x8b, 0x16, 0x8d, 0x38, 0xb7, 0xa1, 0x68, 0x00 } }

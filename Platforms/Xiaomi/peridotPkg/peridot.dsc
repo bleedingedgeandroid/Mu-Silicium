@@ -27,7 +27,7 @@
   FLASH_DEFINITION               = peridotPkg/peridot.fdf
   USE_DISPLAYDXE                 = 0
   AB_SLOT_SUPPORT                = 0
-
+  
 [LibraryClasses]
   DeviceMemoryMapLib|peridotPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|peridotPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
@@ -37,7 +37,7 @@
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000
 
   # Device Maintainer
-  gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"PugzAreCute"
+  gSiliciumPkgTokenSpaceGuid.PcdDeviceMaintainer|"PugzAreCute"
 
   # CPU Vector Address
   gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xa7600000
@@ -47,26 +47,29 @@
   gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x40000
 
   # SmBios
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Poco F6"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"peridot"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Poco_F6_peridot"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Poco F6"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Poco F6"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"peridot"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Poco_F6_peridot"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Poco F6"
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1220
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2712
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|30
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1220
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2712
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|30
+
+  # Platform Pei
+  gQcomPkgTokenSpaceGuid.PcdPlatformType|"LA"
 
   # Dynamic RAM Start Address
   gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0x19000000
 
   # SD Card Slot
-  gQcomPkgTokenSpaceGuid.PcdSDCardSlotPresent|FALSE
-  
-  # USB Controller
-  gQcomPkgTokenSpaceGuid.PcdStartUsbController|TRUE            # This should be TRUE unless your UsbConfigDxe is Patched to be Dual Role.
+  gQcomPkgTokenSpaceGuid.PcdInitCardSlot|FALSE
 
+  # USB Controller
+  gQcomPkgTokenSpaceGuid.PcdStartUsbController|TRUE
+  
 [PcdsDynamicDefault]
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1220
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2712
