@@ -31,6 +31,8 @@
 [LibraryClasses]
   DeviceMemoryMapLib|peridotPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|peridotPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
+  DevicePrePiLib|peridotPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
+
 
 [PcdsFixedAtBuild]
   # DDR Start Address
@@ -62,7 +64,7 @@
   gQcomPkgTokenSpaceGuid.PcdPlatformType|"LA"
 
   # Dynamic RAM Start Address
-  gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0x19000000
+  gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0xF3200000
 
   # SD Card Slot
   gQcomPkgTokenSpaceGuid.PcdInitCardSlot|FALSE
@@ -80,4 +82,4 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|153
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|143
 
-!include SM8635Pkg/SM8635.dsc.inc
+!include SM8635Pkg/SM8635Pkg.dsc.inc
