@@ -35,9 +35,9 @@
   gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|26
 
   # GIC
-  gArmTokenSpaceGuid.PcdGicDistributorBase|0xb220000
-  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x174000f0
-  gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0x174000f0
+  gArmTokenSpaceGuid.PcdGicDistributorBase|0x17100000
+  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17180000
+  gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0x17180000
 
   # ACPI
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00008635

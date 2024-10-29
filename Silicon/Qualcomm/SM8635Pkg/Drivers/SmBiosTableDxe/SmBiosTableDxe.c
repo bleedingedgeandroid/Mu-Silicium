@@ -195,11 +195,15 @@ CacheInfoUpdateSmbiosType7 ()
   mProcessorInfoType4_a520.L1CacheHandle = (UINT16)SmbiosHandle;
 
   LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_x4, mCacheInfoType7_L2CStrings, &SmbiosHandle);
+
+  mProcessorInfoType4_x4.L2CacheHandle = (UINT16)SmbiosHandle;
+
   LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_a720, mCacheInfoType7_L2CStrings, &SmbiosHandle);
+
+  mProcessorInfoType4_a720.L2CacheHandle = (UINT16)SmbiosHandle;
+
   LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_a520, mCacheInfoType7_L2CStrings, &SmbiosHandle);
 
-  mProcessorInfoType4_x4.L2CacheHandle   = (UINT16)SmbiosHandle;
-  mProcessorInfoType4_a720.L2CacheHandle = (UINT16)SmbiosHandle;
   mProcessorInfoType4_a520.L2CacheHandle = (UINT16)SmbiosHandle;
 }
 

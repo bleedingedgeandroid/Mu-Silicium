@@ -111,7 +111,7 @@ SMBIOS_TABLE_TYPE0 mBIOSInfoType0 = {
 
 CHAR8 *mBIOSInfoType0Strings[] = {
   "Not Specified", // Vendor String
-  "3.0",           // BiosVersion String
+  "3.0.1",         // BiosVersion String
   __DATE__,        // BiosReleaseDate String
   NULL
 };
@@ -440,8 +440,8 @@ SMBIOS_TABLE_TYPE4 mProcessorInfoType4_a520 = {
     0  // ProcessorVoltageIndicateLegacy
   },
   0,                     // ExternalClock
-  2800,                  // MaxSpeed
-  2800,                  // CurrentSpeed
+  2000,                  // MaxSpeed
+  2000,                  // CurrentSpeed
   0x41,                  // Status
   ProcessorUpgradeOther, // ProcessorUpgrade
   0,                     // L1CacheHandle
@@ -456,7 +456,6 @@ SMBIOS_TABLE_TYPE4 mProcessorInfoType4_a520 = {
   0xAC,                  // ProcessorCharacteristics
   ProcessorFamilyARM,    // ARM Processor Family
 };
-
 
 CHAR8 *mProcessorInfoType4Strings[] = {
   "Qualcomm",
@@ -566,7 +565,6 @@ SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_x4 = {
   CacheAssociativity8Way // Associativity
 };
 
-
 SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_a720 = {
   {EFI_SMBIOS_TYPE_CACHE_INFORMATION, sizeof(SMBIOS_TABLE_TYPE7), 0},
   1,      // SocketDesignation String
@@ -599,7 +597,6 @@ SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_a720 = {
   CacheAssociativity8Way // Associativity
 };
 
-
 SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_a520 = {
   {EFI_SMBIOS_TYPE_CACHE_INFORMATION, sizeof(SMBIOS_TABLE_TYPE7), 0},
   1,      // SocketDesignation String
@@ -631,6 +628,8 @@ SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_a520 = {
   CacheTypeUnified,      // System Cache Type
   CacheAssociativity8Way // Associativity
 };
+
+// L3 Cache Size is Unknown D:
 
 CHAR8 *mCacheInfoType7_L1ICStrings[] = {
   "L1 Instruction Cache",
@@ -696,7 +695,7 @@ SMBIOS_TABLE_TYPE17 mMemDevInfoType17 = {
     0, // Unbuffered
     0, // Reserved1
   },
-  3000, // Speed
+  4200, // Speed
   2,    // Manufacturer String
   3,    // SerialNumber String
   4,    // AssetTag String
