@@ -90,11 +90,11 @@
 
 <img align="right" src="Resources/Pictures/Nothing-Phone-2.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: pong** <br>
 **Maintainers: [index986](https://github.com/index986)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/), [N1kroks](https://github.com/N1kroks)** <br>
-**Testers: [index986](https://github.com/index986) [nokii1337](https://github.com/nokii1337), People from tg/discord nothing group**
+**Testers: [index986](https://github.com/index986), People from tg/discord nothing group**
 
 ### UEFI Status
 
@@ -103,10 +103,10 @@
 | Display            |                   | ✅    |
 | Internal Storage   |                   | ✅    |
 | Side Buttons       |                   | ✅    |
-| USB Host Mode      |                   | ✅    |
-| USB Device Mode    |                   | ❌    |
+| USB Host Mode      |                   | ❌    |
+| USB Device Mode    |                   | ✅    |
 | USB Power Delivery |                   | ❌    |
-| Mass Storage       | Needs Device Mode | ❌    |
+| Mass Storage       |                   | ✅    |
 | Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
 
@@ -134,7 +134,7 @@
 | USB Power Delivery   |               | ❌    |
 | Charging             |               | ❌    |
 | WLAN                 |               | ❌    |
-| CPU                  | One Core Only | ⚠    |
+| CPU                  |               | ✅    |
 | Touchscreen          |               | ❌    |
 | Bluetooth            |               | ❌    |
 | GPS                  |               | ❌    |
@@ -152,7 +152,7 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-12-Pro.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: zeus** <br>
 **Maintainers: [2petro](https://github.com/2Petro)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/), [2petro](https://github.com/2Petro)** <br>
@@ -314,11 +314,11 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-11.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: venus** <br>
-**Maintainer: [Daniel224455/Daniel6745](https://github.com/Daniel224455/)** <br>
+**Maintainer: [Daniel224455](https://github.com/Daniel224455/)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/)** <br>
-**Tester: [Daniel224455/Daniel6745](https://github.com/Daniel224455/)**
+**Tester: [Daniel224455](https://github.com/Daniel224455/)**
 
 ### UEFI Status
 
@@ -331,7 +331,7 @@
 | USB Device Mode    |                   | ❌    |
 | USB Power Delivery |                   | ❌    |
 | Mass Storage       | Needs Device Mode | ❌    |
-| Windows Boot       | Windows PE only   | ⚠️    |
+| Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
 
 ### OS Status
@@ -342,8 +342,8 @@
 
 | Feature               | Description | State |
 |:----------------------|:------------|:-----:|
-| Internal Storage      |             | ❌    |
-| Side Buttons          |             | ❌    |
+| Internal Storage      |             | ✅    |
+| Side Buttons          |             | ✅    |
 | Proximity Sensor      |             | ❌    |
 | Light Sensor          |             | ❌    |
 | Accelerometer Sensor  |             | ❌    |
@@ -357,7 +357,7 @@
 | NFC Sensor            |             | ❌    |
 | Temperature Sensor    |             | ❌    |
 | Battery               |             | ❌    |
-| USB Host Mode         |             | ❌    |
+| USB Host Mode         |             | ✅    |
 | USB Device Mode       |             | ❌    |
 | USB Power Delivery    |             | ❌    |
 | Charging              |             | ❌    |
@@ -473,7 +473,7 @@
 
 <img align="right" src="Resources/Pictures/Samsung-Galaxy-S21-Fe.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: r9q** <br>
 **Maintainer: [Icesito68](https://github.com/Icesito68/)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/),[Nikroks](https://github.com/N1kroks)** <br>
@@ -583,9 +583,9 @@
 | Fingerprint Sensor   |                                   | ❌    |
 | NFC Sensor           |                                   | ❌    |
 | Battery              |                                   | ✅    |
-| USB Host Mode        | Depends What Mode it was in UEFI. | ✅    |
-| USB Device Mode      | Depends What Mode it was in UEFI. | ✅    |
-| USB Power Delivery   | Depends What Mode it was in UEFI. | ✅    |
+| USB Host Mode        |                                   | ✅    |
+| USB Device Mode      |                                   | ❌    |
+| USB Power Delivery   |                                   | ✅    |
 | Charging             |                                   | ❌    |
 | WLAN                 |                                   | ❌    |
 | CPU                  |                                   | ✅    |
@@ -606,7 +606,7 @@
 
 <img align="right" src="Resources/Pictures/Realme-GT-NEO-2.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: bitra** <br>
 **Maintainer: [kubawis128](https://github.com/kubawis128)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/), [kubawis128](https://github.com/kubawis128)** <br>
@@ -1054,6 +1054,67 @@
 
 </td></tr> </table>
 
+## Xiaomi Pad 5
+
+<img align="right" src="Resources/Pictures/Xiaomi-Pad-5.png" width="500" alt="Preview">
+
+**State: Active** <br>
+**Codename: nabu** <br>
+**Maintainers: [iNUCi](https://github.com/iNUCi)** <br>
+**Contributors: [iNUCi](https://github.com/iNUCi)** <br>
+**Testers: [iNUCi](https://github.com/iNUCi)**
+
+### UEFI Status
+
+| Feature            | Description | State |
+|:-------------------|:------------|:-----:|
+| Display            |             | ✅    |
+| Internal Storage   |             | ✅    |
+| Side Buttons       |             | ✅    |
+| USB Host Mode      |             | ❌    |
+| USB Device Mode    |             | ✅    |
+| USB Power Delivery |             | ❌    |
+| Mass Storage       |             | ✅    |
+| Windows Boot       |             | ✅    |
+| Linux Boot         | Untested    | ❔    |
+
+### OS Status
+
+<table>
+<tr><th>Windows</th></tr>
+<tr><td>
+
+> NOTE: Needs [Windows Drivers](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/tag/Drivers/latest)!
+
+| Feature              | Description                                                  | State |
+|:---------------------|:-------------------------------------------------------------|:-----:|
+| Internal Storage     |                                                              | ✅    |
+| Side Buttons         |                                                              | ✅    |
+| Proximity Sensor     |                                                              | ❌    |
+| Accelerometer Sensor |                                                              | ✅    |
+| Compass Sensor       |                                                              | ❌    |
+| Gyroscope Sensor     |                                                              | ❌    |
+| Fingerprint Sensor   |                                                              | ❌    |
+| NFC Sensor           |                                                              | ❌    |
+| Temperature Sensor   |                                                              | ❔    |
+| Battery              |                                                              | ✅    |
+| USB                  |                                                              | ✅    |
+| Charging             | Very slow                                                    | ⚠️    |
+| WLAN                 |                                                              | ✅    |
+| CPU                  |                                                              | ✅    |
+| Touchscreen          |                                                              | ✅    |
+| Bluetooth            |                                                              | ✅    |
+| GPS                  |                                                              | ✅    |
+| Speakers             |                                                              | ✅    |
+| Microphone           |                                                              | ✅    |
+| GPU                  |                                                              | ✅    |
+| Flashlight           |                                                              | ⚠    |
+| Camera               |                                                              | ❌    |
+| Display              |                                                              | ✅    |
+| Vibration            |                                                              | ❌    |
+
+</td></tr> </table>
+
 ## LG G8s
 
 <img align="right" src="Resources/Pictures/LG-G8s.png" width="500" alt="Preview">
@@ -1256,7 +1317,7 @@
 
 <img align="right" src="Resources/Pictures/LG-Velvet-caymanslm.png" width="300" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: caymanslm** <br>
 **Maintainer: [CodeLindro](https://github.com/leandrofriedrich/)** <br>
 **Contributors: None** <br>
@@ -1323,7 +1384,7 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-Mix-2S.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: polaris** <br>
 **Maintainers: [Daniel224455](https://github.com/Daniel224455), [TrustedFloppa](https://github.com/TrustedFloppa)** <br>
 **Contributors: [Daniel224455](https://github.com/Daniel224455), [TrustedFloppa](https://github.com/TrustedFloppa)** <br>
@@ -1405,6 +1466,30 @@
 | Windows Boot       |                   | ❌    |
 | Linux Boot         |                   | ❌    |
   </summary>
+  
+  ## Xiaomi Mi 8
+
+<img align="right" src="Resources/Pictures/Mi-8-dipper.png" width="500" alt="Preview">
+
+**State: Active** <br>
+**Maintainers: [index986](https://github.com/index986)** <br>
+**Contributors: [index986](https://github.com/index986)** <br>
+**Testers: Stas**
+
+### UEFI Status
+
+| Feature            | Description       | State |
+|:-------------------|:------------------|:-----:|
+| Display            |                   | ✅    |
+| Internal Storage   |                   | ✅    |
+| Side Buttons       |                   | ✅    |
+| USB Host Mode      |                   | ✅    |
+| USB Device Mode    |                   | ❌    |
+| USB Power Delivery |                   | ❌    |
+| Mass Storage       | Needs Device Mode | ❌    |
+| Windows Boot       |                   | ❌    |
+| Linux Boot         |                   | ❌    |
+  </summary>
 </details>
 
 <details>
@@ -1443,8 +1528,8 @@
 
 > NOTE: Needs Windows Drivers!
 
-| Feature              | Description | State |
-|:---------------------|:------------|:-----:|
+| Feature              | Description               | State |
+|:---------------------|:--------------------------|:-----:|
 | Internal Storage     | Probably Works if Enabled | ❔    |
 | SD Card              |                           | ✅    |
 | Side Buttons         |                           | ❌    |
@@ -1591,26 +1676,26 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-11-Lite-NE.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: lisa** <br>
-**Maintainer: [ETCHDEV](https://github.com/ETCHDEV/)** <br>
-**Contributors: People from Group** <br>
-**Tester: [ETCHDEV](https://github.com/ETCHDEV/)**
+**Maintainer: [Aistop](https://github.com/AistopGit/)** <br>
+**Contributors: [ETCHDEV](https://github.com/ETCHDEV), [Nikroks](https://github.com/N1kroks)** <br>
+**Tester: [Aistop](https://github.com/AistopGit/)**
 
 ### UEFI Status
 
-| Feature            | Description | State |
-|:-------------------|:------------|:-----:|
-| Display            |             | ✅    |
-| Internal Storage   |             | ✅    |
-| Side Buttons       |             | ✅    |
-| USB Host Mode      |             | ❌    |
-| USB Device Mode    |             | ✅    |
-| USB Power Delivery |             | ❌    |
-| Mass Storage       |             | ❔    |
-| SD Card            |             | ❌    |
-| Windows Boot       |             | ✅    |
-| Linux Boot         |             | ❌    |
+| Feature            | Description                | State |
+|:-------------------|:---------------------------|:-----:|
+| Display            |                            | ✅    |
+| Internal Storage   |                            | ✅    |
+| Side Buttons       |                            | ✅    |
+| USB Host Mode      |                            | ❌    |
+| USB Device Mode    |                            | ✅    |
+| USB Power Delivery |                            | ❌    |
+| Mass Storage       | Crashes on large transfers | ⚠️    |
+| SD Card            |                            | ❌    |
+| Windows Boot       |                            | ✅    |
+| Linux Boot         |                            | ❌    |
 
 ### OS Status
 
@@ -1618,38 +1703,38 @@
 <tr><th>Windows</th></tr>
 <tr><td>
 
-> NOTE: Needs Windows Drivers!
+> NOTE: Needs [Windows Drivers](https://github.com/AistopGit/windows_oem_xiaomi_lisa)!
 
-| Feature              | Description | State |
-|:---------------------|:------------|:-----:|
-| Internal Storage     |             | ✅    |
-| SD Card              |             | ❌    |
-| Side Buttons         |             | ✅    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
-| Fingerprint Sensor   |             | ❌    |
-| Hall Sensor          |             | ❌    |
-| NFC Sensor           |             | ❌    |
-| Temperature Sensor   |             | ✅    |
-| Battery              |             | ❌    |
-| USB Host Mode        |             | ✅    |
-| USB Device Mode      |             | ❌    |
-| USB Power Delivery   |             | ❌    |
-| Charging             |             | ❌    |
-| WLAN                 |             | ❌    |
-| CPU                  |             | ✅    |
-| Touchscreen          |             | ❌    |
-| Bluetooth            |             | ✅    |
-| GPS                  |             | ✅    |
-| Speakers             |             | ❌    |
-| Microphone           |             | ❌    |
-| GPU                  |             | ❌    |
-| Camera               |             | ❌    |
-| Mobile Data          |             | ❌    |
-| Display              |             | ✅    |
-| Vibration            |             | ❌    |
+| Feature              | Description           | State |
+|:---------------------|:----------------------|:-----:|
+| Internal Storage     |                       | ✅    |
+| SD Card              | Hot Plug doesn't work | ⚠️    |
+| Side Buttons         |                       | ✅    |
+| Proximity Sensor     |                       | ❌    |
+| Light Sensor         |                       | ❌    |
+| Accelerometer Sensor |                       | ❌    |
+| Compass Sensor       |                       | ❌    |
+| Fingerprint Sensor   |                       | ❌    |
+| Hall Sensor          |                       | ❌    |
+| NFC Sensor           |                       | ❌    |
+| Temperature Sensor   |                       | ✅    |
+| Battery              |                       | ✅    |
+| USB Host Mode        |                       | ✅    |
+| USB Device Mode      |                       | ✅    |
+| USB Power Delivery   |                       | ✅    |
+| Charging             |                       | ✅    |
+| WLAN                 |                       | ✅    |
+| CPU                  |                       | ✅    |
+| Touchscreen          |                       | ✅    |
+| Bluetooth            |                       | ✅    |
+| GPS                  |                       | ✅    |
+| Speakers             |                       | ❌    |
+| Microphone           |                       | ❌    |
+| GPU                  |                       | ❌    |
+| Camera               |                       | ❌    |
+| Mobile Data          |                       | ✅    |
+| Display              |                       | ✅    |
+| Vibration            |                       | ❌    |
 
 </td></tr> </table>
 
@@ -1657,7 +1742,7 @@
 
 <img align="right" src="Resources/Pictures/Samsung-Galaxy-A52s-5G.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: a52sxq** <br>
 **Maintainer: [arminask](https://github.com/arminask)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/), People from Group** <br>
@@ -1682,7 +1767,7 @@
 
 <img align="right" src="Resources/Pictures/Nothing-Phone-1-spacewar.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: spacewar** <br>
 **Maintainer: [index986](https://github.com/index986)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/)** <br>
@@ -1699,10 +1784,8 @@
 | USB Device Mode    |             | ✅    |
 | USB Power Delivery |             | ❌    |
 | Mass Storage       |             | ✅    |
-| Windows Boot       |             | ❌    |
+| Windows Boot       |Broken       | ❌    |
 | Linux Boot         |             | ❌    |
-
-
 
   </summary>
 </details>
@@ -1803,10 +1886,10 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Poco-X3-NFC.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: surya** <br>
-**Maintainer: remtrik** <br>
-**Contributors: None** <br>
+**Maintainer: [remtrik](https://github.com/remtrik)** <br>
+**Contributors: [Nikroks](https://github.com/N1kroks)** <br>
 **Tester: None**
 
 ### UEFI Status
@@ -1821,15 +1904,59 @@
 | USB Device Mode    |                   | ❌    |
 | USB Power Delivery |                   | ❌    |
 | Mass Storage       | Needs Device Mode | ❌    |
-| SD Card            |                   | ❌    |
-| Windows Boot       |                   | ❌    |
+| SD Card            |                   | ✅    |
+| Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
+
+### OS Status
+
+<table>
+<tr><th>Windows</th></tr>
+<tr><td>
+
+> NOTE: Needs Drivers!
+
+| Feature              | Description | State |
+|:---------------------|:------------|:-----:|
+| Internal Storage     |             | ✅    |
+| Side Buttons         |             | ✅    |
+| Proximity Sensor     |             | ❌    |
+| Light Sensor         |             | ❌    |
+| Accelerometer Sensor |             | ❌    |
+| Compass Sensor       |             | ❌    |
+| Gyroscope Sensor     |             | ❌    |
+| Barometer Sensor     |             | ❌    |
+| Geomagnetic Sensor   |             | ❌    |
+| Fingerprint Sensor   |             | ❌    |
+| Hall Sensor          |             | ❌    |
+| Gravity Sensor       |             | ❌    |
+| NFC Sensor           |             | ❌    |
+| Temperature Sensor   |             | ✅    |
+| Battery              |             | ✅    |
+| USB Host Mode        |             | ✅    |
+| USB Device Mode      |             | ❌    |
+| USB Power Delivery   |             | ❌    |
+| Charging             |             | ❌    |
+| WLAN                 |             | ❌    |
+| CPU                  |             | ✅    |
+| Touchscreen          |             | ❌    |
+| Bluetooth            |             | ❌    |
+| GPS                  |             | ✅    |
+| Speakers             |             | ❌    |
+| Microphone           |             | ❌    |
+| GPU                  |             | ❌    |
+| Camera               |             | ❌    |
+| Mobile Data          |             | ❌    |
+| Display              |             | ✅    |
+| Vibration            |             | ❌    |
+
+</td></tr> </table>
 
 ## Redmi Note 10 Pro
 
 <img align="right" src="Resources/Pictures/Xiaomi-Redmi-Note-10-Pro.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: sweet** <br>
 **Maintainers: [remtrik](https://github.com/remtrik), [hiprivsid](https://github.com/hiprivsid)** <br>
 **Contributors: None** <br>
@@ -1855,7 +1982,7 @@
 
 <img align="right" src="Resources/Pictures/Mi-9T.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: davinci** <br>
 **Maintainer: [tagicmi](https://github.com/tagicmi)** <br>
 **Contributors: None** <br>
@@ -1885,6 +2012,7 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Redmi-Note-9S.png" width="500" alt="Preview">
 
+<!-- State might be Incorrect? -->
 **State: Active** <br>
 **Codename: miatoll** <br>
 **Maintainer: [N1kroks](https://github.com/N1kroks/)** <br>
@@ -1954,10 +2082,10 @@
 | Internal Storage     |             | ✅    |
 | SD Card              |             | ✅    |
 | Side Buttons         |             | ✅    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
+| Proximity Sensor     |             | ✅    |
+| Light Sensor         |             | ✅    |
+| Accelerometer Sensor |             | ✅    |
+| Compass Sensor       |             | ✅    |
 | Gyroscope Sensor     |             | ❌    |
 | Fingerprint Sensor   |             | ❌    |
 | NFC Sensor           |             | ❌    |
@@ -2019,36 +2147,36 @@
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
 
-| Feature              | Description | State |
-|:---------------------|:------------|:-----:|
-| Internal Storage     |             | ✅    |
-| SD Card              |             | ❌    |
-| Side Buttons         |             | ❌    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
-| Fingerprint Sensor   |             | ❌    |
-| NFC Sensor           |             | ❌    |
-| Temperature Sensor   |             | ❌    |
-| Battery              |             | ❌    |
-| USB Host Mode        |             | ✅    |
-| USB Device Mode      |             | ❌    |
-| USB Power Delivery   |             | ❌    |
-| Charging             |             | ❌    |
-| WLAN                 |             | ❌    |
-| CPU                  |             | ✅    |
-| Touchscreen          |             | ❌    |
-| Bluetooth            |             | ❌    |
-| GPS                  |             | ❌    |
-| Speakers             |             | ❌    |
-| 3.5mm Audio Jack     |             | ❌    |
-| Microphone           |             | ❌    |
-| GPU                  |             | ❌    |
-| Camera               |             | ❌    |
-| Mobile Data          |             | ❌    |
-| Display              |             | ✅    |
-| Vibration            |             | ❌    |
+| Feature              | Description         | State |
+|:---------------------|:--------------------|:-----:|
+| Internal Storage     |                     | ✅    |
+| SD Card              |Hot Plug doesn't work| ⚠️    |
+| Side Buttons         |                     | ❌    |
+| Proximity Sensor     |                     | ❌    |
+| Light Sensor         |                     | ❌    |
+| Accelerometer Sensor |                     | ❌    |
+| Compass Sensor       |                     | ❌    |
+| Fingerprint Sensor   |                     | ❌    |
+| NFC Sensor           |                     | ❌    |
+| Temperature Sensor   |                     | ❌    |
+| Battery              |                     | ❌    |
+| USB Host Mode        |                     | ✅    |
+| USB Device Mode      |                     | ❌    |
+| USB Power Delivery   |                     | ❌    |
+| Charging             |                     | ❌    |
+| WLAN                 |                     | ❌    |
+| CPU                  |                     | ✅    |
+| Touchscreen          |                     | ❌    |
+| Bluetooth            |                     | ❌    |
+| GPS                  |                     | ❌    |
+| Speakers             |                     | ❌    |
+| 3.5mm Audio Jack     |                     | ❌    |
+| Microphone           |                     | ❌    |
+| GPU                  |                     | ❌    |
+| Camera               |                     | ❌    |
+| Mobile Data          |                     | ❌    |
+| Display              |                     | ✅    |
+| Vibration            |                     | ❌    |
 
 </td><td>
 
@@ -2319,23 +2447,23 @@
 **State: Inactive** <br>
 **Codename: ginkgo** <br>
 **Maintainer: None** <br>
-**Contributors: [SwedMlite](https://github.com/SwedMlite)** <br>
-**Testers: None**
+**Contributors: [SwedMlite](https://github.com/SwedMlite), [Robotix](https://github.com/Robotix22/)** <br>
+**Testers: [Dima](https://github.com/dimabimaev/)**
 
 ### UEFI Status
 
-| Feature            | Description       | State |
-|:-------------------|:------------------|:-----:|
-| Display            |                   | ✅    |
-| Internal Storage   |                   | ✅    |
-| Side Buttons       |                   | ✅    |
-| USB Host Mode      |                   | ✅    |
-| USB Device Mode    |                   | ❌    |
-| USB Power Delivery |                   | ✅    |
-| Mass Storage       | Needs Device Mode | ❌    |
-| SD Card            |                   | ❌    |
-| Windows Boot       |                   | ✅    |
-| Linux Boot         |                   | ❌    |
+| Feature            | Description               | State |
+|:-------------------|:--------------------------|:-----:|
+| Display            |                           | ✅    |
+| Internal Storage   |                           | ✅    |
+| Side Buttons       |                           | ✅    |
+| USB Host Mode      |                           | ✅    |
+| USB Device Mode    |                           | ❌    |
+| USB Power Delivery |                           | ✅    |
+| Mass Storage       | Unstable with Device Mode | ⚠️    |
+| SD Card            |                           | ❌    |
+| Windows Boot       |                           | ✅    |
+| Linux Boot         |                           | ❔    |
 
 ### OS Status
 
@@ -2645,7 +2773,7 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Redmi-Note-7.png" width="500" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: lavender** <br>
 **Maintainer: [index986](https://github.com/index986)** <br>
 **Contributors: None** <br>
@@ -2807,7 +2935,8 @@
 
 <img align="right" src="Resources/Pictures/Samsung-Galaxy-S20-5G.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+<!-- Kinda Active -->
+**State: Active** <br>
 **Codename: x1s** <br>
 **Maintainer: [halal-beef](https://github.com/halal-beef/)** <br>
 **Contributors: None** <br>
@@ -2893,9 +3022,9 @@
 
 **State: Inactive** <br>
 **Codename: starlte** <br>
-**Maintainer: None** <br>
+**Maintainer: [Robotix](https://github.com/Robotix22/)** <br>
 **Contributors: None** <br>
-**Tester: None**
+**Tester: [Robotix](https://github.com/Robotix22/)**
 
 ### UEFI Status
 

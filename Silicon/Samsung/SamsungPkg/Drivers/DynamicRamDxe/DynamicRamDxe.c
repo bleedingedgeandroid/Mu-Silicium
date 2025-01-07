@@ -1,3 +1,43 @@
+/**************************
+ * Description:
+   Add RAM Partitions.
+   Read Ram Partitions Info by EFI_RAMPARTITION_PROTOCOL and add them.
+
+
+ * Reference Codes
+ * abl/edk2/QcomModulePkg/Library/BootLib/Board.c
+
+ - License:
+ * Copyright (c) 2015-2018, 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022. Sunflower2333. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ * * Redistributions of source code must retain the above copyright
+ *  notice, this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above
+ * copyright notice, this list of conditions and the following
+ * disclaimer in the documentation and/or other materials provided
+ *  with the distribution.
+ *   * Neither the name of The Linux Foundation nor the names of its
+ * contributors may be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+**************************/
+
 #include <Library/DebugLib.h>
 #include <Library/PcdLib.h>
 #include <Library/UefiBootServicesTableLib.h>
@@ -23,14 +63,13 @@ GetMemoryNodes (
   IN  CONST VOID *fdt,
   OUT UINTN      *NodeCount)
 {
-  MEMORY_NODE  *Nodes       = NULL;
-  INT32         Node        = 0;
-  INT32         AddrCells   = 0;
-  INT32         SizeCells   = 0;
-  CONST UINT32 *Reg         = 0;
-  INT32         Len         = 0;
-  UINTN         Count       = 0;
-  UINTN         CurrentSize = 0;
+  MEMORY_NODE *Nodes     = NULL;
+  UINTN        Count     = 0;
+  INT32        Node      = 0;
+  INT32        AddrCells = 0;
+  INT32        SizeCells = 0;
+  UINTN	       CurrentSize = 0;
+  INT32	       Len         = 0;
 
   // Find Root FDT Node
   Node = fdt_path_offset (fdt, "/");
@@ -47,7 +86,7 @@ GetMemoryNodes (
     return NULL;
   }
 
-  // 
+  // Get all Subnodes
   fdt_for_each_subnode (Node, fdt, Node) {
     // Get Device Type
     CONST CHAR8 *DeviceType = fdt_getprop (fdt, Node, "device_type", NULL);
@@ -55,7 +94,8 @@ GetMemoryNodes (
     // Check for Memory Type
     if (DeviceType && !AsciiStrCmp (DeviceType, "memory")) {
       // Get Reg Properties
-      Reg = fdt_getprop (fdt, Node, "reg", &Len);
+      CONST UINT32 *Reg = fdt_getprop (fdt, Node, "reg", &Len);
+
       if (!Reg) {
         DEBUG ((EFI_D_ERROR, "Failed to Read 'reg' Property! Status = %a\n", fdt_strerror(Len)));
         return NULL;
@@ -117,6 +157,7 @@ GetReversedMemoryMap (
 
   while (Start < End) {
     Temp = ReversedMemoryMap[Start];
+
     ReversedMemoryMap[Start] = ReversedMemoryMap[End];
     ReversedMemoryMap[End] = Temp;
 
@@ -187,12 +228,15 @@ AddRamPartitions (
   // Get FDT Pointer
   Status = LocateMemoryMapAreaByName ("FDT Pointer", &FdtPointer);
   if (EFI_ERROR (Status)) {
-    DEBUG ((EFI_D_WARN, "No FDT Pointer Available, Assuming Manual RAM Partitions were Added."));
-    return EFI_SUCCESS;
+    DEBUG ((EFI_D_WARN, "No FDT Pointer Available, Assuming Manual RAM Partitions were Added.\n"));
+    return EFI_NOT_FOUND;
   }
 
   // Get FDT Base Address
   CONST VOID *FDT = (CONST VOID*)(UINTN)MmioRead32 (FdtPointer.Address);
+
+  // Print FDT Location Address
+  DEBUG ((EFI_D_WARN, "FDT Location Address = 0x%llx\n", MmioRead32 (FdtPointer.Address)));
 
   // Get all Memory Nodes
   Nodes = GetMemoryNodes (FDT, &NodeCount);
