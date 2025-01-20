@@ -12,8 +12,8 @@ python3 ./Resources/Scripts/mkbootimg.py \
   --kernel_offset 0x00000000 \
   --ramdisk_offset 0x00000000 \
   --tags_offset 0x00000000 \
-  --os_version 14.0.0 \
+  --os_version 15.0.0 \
   --os_patch_level "$(date '+%Y-%m')" \
-  --header_version 4 \
+  --header_version 3 \
   -o Mu-peridot.img \
   ||_error "\nFailed to create Android Boot Image!\n"
